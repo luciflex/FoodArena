@@ -1,0 +1,121 @@
+extends base
+block header
+    include homeHeader
+block content    
+    section.serve
+     .services
+        .body1
+            h2.fast-food Get Food Fast Not Fast Food
+            br
+            p(style='font-size: 130%; ')
+                | Hello, we're Omnifood, your new premium food delivery service. We know you're always busy.No time for cooking. So let us take care of that,we're really good at it,we promise
+        .body2
+            .calendar.service
+                img.service-icon(src=' IMG/calendar.svg', alt='calendar')
+                h3.subheading UP TO 365 DAYS/YEAR
+                p.subpara
+                    | Lorem ipsum dolor sit amet consectetur perferendis quam? Perferendis magnam et molestiae laborum corporis cumque id nostrum delectus.
+            .truck.service
+                img.service-icon(src='IMG/truck.svg', alt='truck')
+                h3.subheading READY IN 20 MIN
+                p.subpara
+                    | Lorem ipsum dolor sit amet consectetur accusamus laborum laudantium, fuga eius. Molestiae, doloremque fuga molestias quam hic corporis!
+            .organic.service
+                img.service-icon(src='IMG/carrot.svg', alt='organic')
+                h3.subheading 100% ORGANIC
+                p.subpara
+                    | Lorem ipsum, dolor sit amet us deserunt natus, nemo ipsa cumque magnam enim et ex quae, temporibus odit dolor.
+            .alphabet.service
+                img.service-icon(src='IMG/alphabet.svg', alt='catalogue')
+                h3.subheading ORDER ANYTHING
+                p.subpara
+                    | Lorem ipsum dolor sit  aperiam aliquam tempora rem consequuntur modi? Qui accusamus possimus reiciendis nobis quibusdam ipsam earum.
+     br
+    section.how-to
+        .use
+            .body-a
+                h2.how How To Use
+                br
+                br
+            .body-b
+                .download-mock
+                    img.iphone(src=' IMG/iphone.jpeg', alt='')
+                .steps-img
+                    .download-steps.clearfix
+                        .steps
+                            | 1
+                        p.dl-steps
+                            | Chose the subscription plan that best fits your
+                            | needs and sign up today
+                    .download-steps.clearfix
+                        .steps 2
+                        p.dl-steps
+                            | Order your delicious meal using our mobile app or
+                            | website. Or you can even call us!
+                    .download-steps.clearfix
+                        .steps 3
+                        p.dl-steps
+                            | Enloy your meal after less tha 20 minutes,. See you
+                            | the next time!
+                    .downloading
+                        br
+                        br
+                        br
+                        img.download-icons(src=' IMG/appledownload.png', alt='apple_download')
+                        img.download-icons(src=' IMG/googleDownload.jpeg', alt='google_download')
+    section.c-reviews
+        h2.customer-reviews Customer Reviews
+        .reviews
+            .rev
+                h3.c-name David smith
+                br
+                p.the-review
+                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam est aut quasi ratione blanditiis nulla. Fugiat, nisi laborum! Natus, qui!
+            .rev(style='transform:scale(1.1)')
+                h3.c-name David smith
+                br
+                p.the-review
+                    | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt distinctio earum consectetur! Obcaecati, omnis nulla reiciendis odit maiores soluta fugit.
+                i.fas.fa-star
+            .rev
+                h3.c-name David smith
+                br
+                p.the-review
+                    | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi natus ab nulla ipsa aliquid dolore molestiae porro perferendis possimus reprehenderit.
+        br
+        br
+        br
+    section.sign-up
+        h2.contact-us Contact Us
+        .signup-container
+            video.bg-video(src=' IMG/Avocado.mp4')
+            .form
+                form(action='')
+                    .form-entry
+                        label(for='Name') Name
+                        br
+                        br
+                        input(type='text', placeholder='Enter your name')
+                    br
+                    .form-entry
+                        label(for='something') Something
+                        br
+                        br
+                        input(type='text', placeholder='something')
+                    br
+                    .form-entry
+                        label(for='find') How did you hear about us?
+                        br
+                        br
+                        select(name='find', id='')
+                            option(value='Social Media', selected='') Social Media
+                            option(value='Friends') Friends
+                            option(value='Offline') Offline posters
+                    br
+                    .form-entry
+                        label(for='Comments') Your thoughts?
+                        br
+                        br
+                        textarea#cpmment(name='comment', cols='30', rows='10')
+                    br
+

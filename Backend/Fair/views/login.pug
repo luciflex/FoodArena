@@ -1,0 +1,18 @@
+extend base
+block content
+    section.login
+        h2.login-heading LOGIN
+        form.login-form(action='')
+            label(for='email') Email
+            input.login-details(type='email', name='', id='email', placeholder='abc@abc.com')
+            br
+            label(for='passowrd') Password
+            input.login-details(type='password', name='', id='password', placeholder='*****')
+            br
+            button.login-button(type="submit") Login   
+            button.signup-button(href='/signup') New User?
+            br
+            br
+            br
+            br
+            a.forgetpass(href='/forgetPassword') Forgot Password?     

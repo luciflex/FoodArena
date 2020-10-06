@@ -1,0 +1,23 @@
+.plan-child
+  .plans
+    h2.plan-type #{plan.name}
+    p.plan-head
+      | /month  
+      br
+      | That's only $#{plan.price} per meal
+    br
+    ul.plan-deets
+      li.plan-detail
+        i.fas.fa-check
+        |  #{plan.description}
+      li.plan-detail
+        i.fas.fa-check
+        |  Order 24/7
+      li.plan-detail
+        i.fas.fa-check
+        |  Access to newest creations
+      li.plan-detail
+        i.fas.fa-check
+        |  Free Delivery
+    .hungry-button
+      a(href='#', style='color: white;') I'm Hungry

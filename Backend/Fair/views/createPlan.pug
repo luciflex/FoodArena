@@ -1,0 +1,22 @@
+extend base
+block content
+    section.newPlan
+        h2.plan-heading New Plan
+        form.create-plan(action='')
+            label(for='Name') Name 
+            input.plan-details(type='text', name='', id='name', placeholder='Name')
+            br
+            label(for='Description') Enter Description
+            textarea.plan-details(name="description", cols="30", rows="10", id='description')
+            br
+            label(for='rating') Enter Rating
+            input.plan-details(type='number', name='', id='ratingsAverage', placeholder='1-10')
+            br
+            label(for='price') Enter Price
+            input.plan-details(type="number", id='price')
+            br
+            label(for='discount') Discount
+            input.plan-details(type='number', name='', id='discount', placeholder='*****')
+            br
+            button.create-plan(type="submit") Create
+            

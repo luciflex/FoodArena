@@ -1,0 +1,26 @@
+extend base
+block content
+    section.newSignup
+        h2.sign-heading New here? SIGN UP
+        form.signup-form(action='')
+            label(for='Name') Name 
+            input.login-details(type='text', name='', id='name', placeholder='Name')
+            br
+            label(for='Role') Role
+            select(name='find', id='role')
+                option(value='user', selected='') Customer
+                option(value='Offline') Admin
+                option(value='delivery') Delivery Boy
+
+            br
+            label(for='email') Email
+            input.login-details(type='email', name='', id='email', placeholder='abc@abc.com')
+            br
+            label(for='passowrd') Password
+            input.login-details(type='password', name='', id='password', placeholder='*****')
+            br
+            label(for='confirmPassowrd') confirmPassword
+            input.login-details(type='password', name='', id='confirmPassword', placeholder='*****')
+            br
+            button.signup-button(type="submit") Let's go
+            
